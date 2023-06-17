@@ -1,3 +1,3 @@
-# dotphoto-signup-login
+# dotphoto
 # Sign Up Done
-# Now working on Login and Forgot Password 
+# Now working on Login and Forgot Password  ------------------
