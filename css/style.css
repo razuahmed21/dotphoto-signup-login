@@ -167,15 +167,252 @@ input[type="number"] {
 }
 
 .checkbox-info input[type="checkbox"]:checked + label::before {
-	background-color: #36CBFF;
-	border-color: #36CBFF;
+	background-color: #36cbff;
+	border-color: #36cbff;
 }
 
 .checkbox-info input[type="checkbox"]:checked + label::after {
 	color: #fff;
 }
 /* ====================LOGIN====================== */
+.login-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1.1fr;
+	height: 100vh;
+}
+.login-right-panel {
+	background-color: #fff;
+	padding: 50px 180px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.login-left-panel {
+	background-image: url("../assets/login-bg.png");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+#logInForm,
+#resetPasswordForm,
+#guestLogInForm {
+	margin-top: 15px;
+}
+.email-icon {
+	background-image: url("../assets/email.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-size: 18px;
+}
+.password-icon {
+	background-image: url("../assets/password.png");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-size: 18px;
+}
+.login-title h3 {
+	font-size: 29px;
+	font-weight: 700;
+}
+.login-title p {
+	font-size: 15px;
+	color: #5b5675;
+	font-weight: 400;
+	margin-top: 10px;
+}
 
+.login--form-group label {
+	display: block;
+	color: #000;
+	font-size: 17px;
+}
+.login--form-group input {
+	width: 100%;
+	font-size: 15px;
+	background-color: #fff;
+	height: 55px;
+	border-radius: 5px;
+	border: 1px solid #bcb8d0;
+	padding: 15px 35px;
+	box-sizing: border-box;
+	margin: 10px 0 20px 0;
+}
+.login--form-group input:focus {
+	border: 1px solid #36cbff;
+	box-shadow: none;
+	outline: none;
+}
+.forgot-pass {
+	text-align: right;
+}
+.forgot-pass p a {
+	color: #2ba2cc;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.login-now-btn button {
+	display: inline-block;
+	border: none;
+	background-color: #36cbff;
+	color: #fff;
+	width: 100%;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	transition: 0.5s;
+}
+.login-now-btn button:hover {
+	background-color: #0b9fd5;
+}
+.login-btn-divider {
+	text-align: center;
+	color: #5b5675;
+	font-weight: 500;
+}
+.guest-login-btn button {
+	display: inline-block;
+	border: none;
+	background-color: #36cbff;
+	color: #fff;
+	width: 100%;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-weight: 700;
+	font-size: 17px;
+	text-transform: capitalize;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.5s;
+}
+.guest-login-btn button:hover {
+	background-color: #0b9fd5;
+}
+.guest-login-btn a {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #2ba2cc;
+	color: #2ba2cc;
+	width: 100%;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-weight: 700;
+	font-size: 17px;
+	text-transform: capitalize;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	transition: 0.5s;
+	text-decoration: none;
+	text-align: center;
+}
+.create-account-link p {
+	color: #0a071b;
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 5px;
+}
+.create-account-link a {
+	color: #2ba2cc;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 5px;
+}
+.login-error-msg {
+	margin: 0 0 10px;
+	margin-top: -12px;
+	color: red;
+	min-height: 10px;
+}
+.back-login-link a {
+	text-decoration: none;
+	color: #0a071b;
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 10px;
+}
+/* slider css */
+.loginSlider {
+	position: relative;
+}
+.loginSlider {
+	margin: 0 50px;
+	border-radius: 12px;
+	background: rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(15px);
+	padding: 50px;
+	box-sizing: border-box;
+}
+.loginSlider div {
+	width: 37vw;
+	height: auto;
+}
+.loginSlider .slick-dots {
+	position: absolute;
+	bottom: 0px;
+	right: 45%;
+	display: flex;
+	padding: 20px;
+}
+
+.loginSlider .slick-dots button {
+	display: block;
+	width: 25px;
+	height: 2px;
+	border-radius: 5px;
+	padding: 0;
+	border: none;
+	background-color: #8a8a8ae2;
+	text-indent: -9999px;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+.loginSlider .slick-dots li {
+	list-style: none;
+}
+
+.loginSlider .slick-dots li.slick-active button {
+	background-color: #ffffff;
+	width: 25px;
+	height: 3px;
+}
+button:focus {
+	outline: none;
+	outline: 0px auto -webkit-focus-ring-color;
+}
+.single-slider img {
+	width: 170px;
+	margin: 40px 0 25px 0;
+}
+.single-slider .slider-text h3 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 42px;
+}
+.single-slider .slider-text p {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 30px 0;
+}
+.single-slider .slider-text ul {
+	padding: 0 15px;
+	margin-bottom: 50px;
+}
+.single-slider .slider-text ul li {
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+}
+/* ======================Responsive css======================= */
 /* signup container */
 @media only screen and (min-width: 991px) {
 	.signup-wrapper .container,
@@ -187,7 +424,7 @@ input[type="number"] {
 		max-width: 1000px;
 	}
 }
-/* mobile screen */
+/* signup mobile screen */
 @media only screen and (max-width: 576px) {
 	.formBox {
 		padding: 30px 30px;
@@ -212,6 +449,56 @@ input[type="number"] {
 	}
 	.text-and-link a,
 	.check-terms a {
+		font-size: 15px;
+	}
+}
+/* login css */
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.loginSlider div {
+		width: 35vw;
+		height: auto;
+	}
+	.login-right-panel {
+		padding: 50px 50px;
+	}
+	.loginSlider {
+		margin: 0 25px;
+		padding: 40px;
+	}
+}
+@media only screen and (max-width: 1510px) and (min-width: 1200px) {
+	.loginSlider div {
+		width: 35vw;
+		height: auto;
+	}
+	.login-right-panel {
+		padding: 50px 100px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.login-wrapper {
+		display: inherit;
+	}
+	.login-left-panel {
+		display: none;
+	}
+	.login-right-panel {
+		padding: 50px 35px;
+		height: 100%;
+	}
+	.login-title h3 {
+		font-size: 25px;
+	}
+	.login-now-btn button {
+		font-size: 17px;
+	}
+	.guest-login-btn button {
+		font-size: 16px;
+	}
+	.guest-login-btn a {
+		font-size: 16px;
+	}
+	.login-btn-divider {
 		font-size: 15px;
 	}
 }

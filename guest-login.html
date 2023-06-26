@@ -19,7 +19,7 @@
     <script src="https://use.fontawesome.com/594ca9152a.js"></script>
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Dotphoto - Login</title>
+    <title>Dotphoto - Guest Login</title>
 </head>
 
 <body>
@@ -87,12 +87,12 @@
                     <!-- login heading -->
                     <div class="col-12">
                         <div class="login-title">
-                            <h3>Member Login Account</h3>
+                            <h3>Guest Login Account</h3>
                             <p>Please enter your details</p>
                         </div>
                     </div>
                     <!-- login form -->
-                    <form action="#" id="logInForm">
+                    <form action="#" id="guestLogInForm">
                         <div class="col-12">
                             <!-- single input  -->
                             <div class="login--form-group">
@@ -111,36 +111,14 @@
                                 <p class="login-error-msg"></p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="check-terms">
-                                    <div class="checkbox checkbox-info">
-                                        <input type="checkbox" class="custom-control-input" name="remember"
-                                            value="remember" id="remember">
-                                        <label class="custom-control-label" for="remember">Remember Me</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <!-- single input  -->
-                                <div class="login--form-group">
-                                    <div class="forgot-pass">
-                                        <p><a href="forgot-password.html">Forgot Password?</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <!-- login button group -->
                         <div class="col-12">
-                            <div class="login-now-btn">
-                                <button type="submit">Sign in</button>
-                            </div>
-                            <p class="login-btn-divider">OR</p>
                             <div class="guest-login-btn">
-                                <a href="guest-login.html">Guest Sign in</a>
+                                <button type="submit">Guest Sign in</button>
                             </div>
-                            <div class="create-account-link">
-                                <p>Not registered yet? <a href="index.html">Create an account</a></p>
+                            <div class="back-login-link">
+                                <a href="login.html"><img src="assets/left-arrow.png" alt="left-arrow"> Back to log
+                                    in</a>
                             </div>
                         </div>
                     </form>
