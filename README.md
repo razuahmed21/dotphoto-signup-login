@@ -1,3 +1,3 @@
-# dotphoto
+# dotphoto join + login
 # Sign Up Done
-# Now working on Login and Forgot Password  ------------------
+# Login Done
